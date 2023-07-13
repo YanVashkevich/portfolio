@@ -1,0 +1,100 @@
+.hero {
+  height: 100vh;
+  scroll-snap-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+  display: flex;
+}
+
+.left {
+  padding: 0;
+  margin: 64px;
+  text-align: left;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.title {
+  font-size: 44px;
+  justify-content: left;
+}
+
+.what-we-do {
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: rgb(109, 64, 177);
+}
+
+.text {
+  font-size: 24px;
+  text-align: left;
+  color: lightgray;
+}
+
+.learn-btn:hover {
+  background-color: rgb(94, 161, 220);
+}
+
+.left a {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+
+.learn-btn {
+  width: 100px;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  float: right;
+  color: white;
+  background-color: rgb(145, 194, 238);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  height: 25px;
+  animation-name: gradient;
+  animation-duration: 4s;
+  cursor: pointer;
+}
+
+.right {
+  flex: 2;
+  height: 72vh;
+  position: relative;
+}
+
+.cube-image {
+  width: 700px;
+  height: 260px;
+  object-fit: contain ;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  100% {
+    transform: translateY(20px);
+  }
+}
+

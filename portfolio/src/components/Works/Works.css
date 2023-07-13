@@ -1,0 +1,111 @@
+
+.works {
+    height: 110vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+.whole-page {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;  
+
+}
+
+.works-left {
+  flex: 1;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  text-align: left;
+}
+
+div .wd  {
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+}
+
+div .wd:hover{
+  color: blueviolet;
+  top: 0;
+  left: 0;
+  transition: all 1s linear;    
+}
+
+div .dev  {
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+}
+
+div .dev:hover{
+  color: pink;
+  top: 0;
+  left: 0;
+  transition: all 1s linear;
+}
+
+div .ilu  {
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+}
+
+div .ilu:hover{
+  color: orange;
+  top: 0;
+  left: 0;
+  transition: all 1s linear;
+}
+
+div .wp {
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+}
+
+div .wp:hover{
+  color: rgb(224, 78, 78);
+  top: 0;
+  left: 0;
+  transition: all 1s linear;
+}
+
+div .sm  {
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+}
+
+div .sm:hover{
+  color: yellow;
+  top: 0;
+  left: 0;
+  transition: all 1s linear;
+}
+
+
+.works-right {
+  flex: 1;
+}

@@ -1,0 +1,41 @@
+.who {
+  height: 110vh;
+  scroll-snap-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right a {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.main-content {
+  height: 110vh;
+  scroll-snap-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+  display: flex;
+}
+
+.right {
+  padding: 0;
+  margin: 64px;
+  margin-right: -64px;
+  text-align: left;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.left  {
+  height: 58vh;
+}

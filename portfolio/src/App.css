@@ -1,0 +1,16 @@
+.App {
+    height: 110vh;
+    color: white;
+    background: url('https://images.hdqwalls.com/download/gradient-art-abstract-4k-z7-1920x1080.jpg') ;
+  
+    scroll-snap-type: y mandatory;  
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    }
+  
+    
