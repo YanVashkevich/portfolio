@@ -53,7 +53,12 @@ export const Contact = () => {
         <button type="submit" className="send-btn">
           {isLoading ? 'Send' : 'Sending...'}
         </button>
-        {success && "Your Message Has Been Sent. We will reply you soon!"}
+        {success && <div className='text-message-sent'>Your Message Has Been Sent. Thank You!</div>}
+
+        <div className='social-imgs'>
+          <a href='https://www.instagram.com/bruhmonkeyproduction/'><img className='instagram' src='instagram.png'/></a>
+          <a href='https://yanvashkevich.t.me/'><img className='telegram' src='telegram.png'/></a>
+        </div>
       </form>
     </div>
   );

@@ -10,10 +10,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;  
+  gap: 26px;  
 
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 .title-contact-us{
@@ -61,3 +61,25 @@
 .send-btn:hover {
   background-color: rgb(198, 76, 209);
 }
+
+
+.instagram {
+  mix-blend-mode: multiply;
+  height: 36px;
+  width: 36px;
+}
+
+.telegram {
+  mix-blend-mode: multiply;
+  height: 36px;
+  width: 36px;
+}
+
+.social-imgs {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
