@@ -83,6 +83,7 @@
   height: 260px;
   object-fit: contain ;
   mix-blend-mode: multiply;
+  filter: contrast(2);
   position: absolute;
   top: 0;
   bottom: 0;

@@ -18,11 +18,11 @@ export const Hero = () => {
             </div>
             <div className='right'>
               <Canvas>
-                <OrbitControls enableZoom = {false} autoRotate ={true}/>
+                <OrbitControls enableZoom = {false} autoRotate ={false}/>
                 <ambientLight intensity={1}/>
-                <directionalLight position={2}/>
+                <directionalLight position={1}/>
                 <Sphere args={[1, 100, 200]} scale={2.7}>
-                  <MeshDistortMaterial color="#2b034f" attach='material' distort={0.4} speed={ 1.25 }/>
+                  <MeshDistortMaterial color="#f94001" attach='material' distort={0.4} speed={ 1.25 }/>
                 </Sphere>
               </Canvas>
               <img src='space.jpg' className='cube-image'/>
