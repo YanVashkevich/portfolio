@@ -1,8 +1,8 @@
 import React from 'react'
 import './Works.css'
 
-export const Works = () => {
 
+export const Works = () => {
 
   return (
     <div className='works'>
@@ -21,3 +21,4 @@ export const Works = () => {
     </div>
   )
 }
+  

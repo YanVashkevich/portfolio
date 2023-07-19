@@ -41,7 +41,7 @@ export const Who = () => {
                 <div className="text-modal">
                   Hello , I'm Yan , young web developer from a Belarus.
                   I'm building applications, exploring new things, learning and working on myself , sharpening my skills in coding.
-                  If you got interested or you just want to contact me, fill form in contact section or DM me in social medias. 
+                  If you got interested or you just want to contact me, fill form in Contact section or DM me in social medias. 
                 </div>
               </div>
             </div>

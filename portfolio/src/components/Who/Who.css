@@ -56,7 +56,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
-  background: white;
+  background-color: rgb(145, 194, 238);
   padding: 14px 28px;
   border-radius: 22px;
   max-width: 600px;
@@ -64,7 +64,5 @@
   border: 1px solid black;
 }
 
-.text-modal {
-  color: black;
-}
+
 
