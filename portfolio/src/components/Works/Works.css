@@ -106,5 +106,6 @@ div .sm:hover {
 }
 
 .works-right {
-  flex: 1;
+  flex: 3;
+  width: 100%;
 }
