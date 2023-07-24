@@ -1,11 +1,11 @@
 import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import Art from './Art'
+import Art from './3Delements/Art'
 
 function Ilustrations() {
   return (
-    <Canvas camera={{ fov: 90, position: [0, 0, 3] }}>
+    <Canvas>
       <Stage>
         <Art/>
       </Stage>

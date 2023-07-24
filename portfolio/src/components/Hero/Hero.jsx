@@ -25,7 +25,7 @@ export const Hero = () => {
                   <MeshDistortMaterial color="#f94001" attach='material' distort={0.4} speed={ 1.5 }/>
                 </Sphere>
               </Canvas>
-              <img src='space.jpg' className='cube-image'/>
+              <img src='./Imgs/space.jpg' className='cube-image'/>
             </div>
         </div>
     </div>

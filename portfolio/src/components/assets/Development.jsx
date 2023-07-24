@@ -1,12 +1,12 @@
 import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import Logo from './Logo'
+import Logo from './3Delements/Logo'
 
 
 function Development() {
   return (
-    <Canvas camera={{ fov:90 }}>
+    <Canvas>
       <Stage>
        <Logo />
       </Stage>

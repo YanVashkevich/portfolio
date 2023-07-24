@@ -1,12 +1,12 @@
 import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import Heart from './Heart'
+import Heart from './3Delements/Heart'
 
 
 function SocialMedia() {
   return (
-    <Canvas camera={{ fov:90 }}>
+    <Canvas>
       <Stage>
         <Heart />
       </Stage>

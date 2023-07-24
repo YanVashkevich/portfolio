@@ -49,17 +49,22 @@
   text-align: center;
   float: right;
   color: white;
-  background-color: rgb(252, 105, 232);
+  background-color: rgb(145, 194, 238);
   border-radius: 5px;
   cursor: pointer;
   border: none;
   padding: 15px;
   cursor: pointer;
   width: 300px;
+  transition: transform 0.2s ease;
 }
 
 .send-btn:hover {
-  background-color: rgb(198, 76, 209);
+  background-color: rgb(94, 161, 220);
+}
+
+.send-btn:active {
+  transform: scale(0.96);
 }
 
 

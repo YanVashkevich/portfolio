@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Who.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Cube from "../assets/Cube";
+import Cube from "../assets/3Delements/Cube";
 
 export const Who = () => {
   

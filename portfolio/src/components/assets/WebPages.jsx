@@ -1,11 +1,11 @@
 import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import Web from './Web'
+import Web from './3Delements/Web'
 
 function WebPages() {
   return (
-    <Canvas camera={{ fov: 90 }}>
+    <Canvas>
       <Stage>
         <Web />
       </Stage>
