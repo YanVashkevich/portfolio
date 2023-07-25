@@ -1,0 +1,20 @@
+.downhint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 180px;
+    height: 70px;
+    padding: 26px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    text-align: start;
+}
+
+span {
+   color: rgb(145, 194, 238);
+}

@@ -12,19 +12,7 @@
     position: absolute;
     top: 40px;
     right: 30px;
-    text-align: center;
-}
-
-
-.hint-image {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 6px;
-    right: 4px;
-    padding: 5px 7px;
-    border: none;
-    cursor: pointer;
+    text-align: start;
 }
 
 
