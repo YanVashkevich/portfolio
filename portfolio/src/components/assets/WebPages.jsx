@@ -16,7 +16,7 @@ function WebPages() {
       </Canvas>
       <div className="hint">
         <div className="hint-text">
-          I build not only SPA , but MPA , if you want me to build you a website, I will build you anithing , according to <span>your taste</span>!
+          I build not only SPA , but MPA , if you want me to build you a website, I will build you anything , according to <span>your taste</span>!
         </div>
       </div>
     </>
