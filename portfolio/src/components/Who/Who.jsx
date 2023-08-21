@@ -28,7 +28,7 @@ export const Who = () => {
           <h2 className="title">Think outside of the box.</h2>
           <div className="what-we-do">-Who Am I</div>
           <div className="text">
-            I'm a teenager, who is intersted in becoming frontend developer.
+            I'm a teenager, who is intersted in becoming <br/> frontend developer.
           </div>
           <button onClick={toggleModal} className="learn-btn">
             Learn more
