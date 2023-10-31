@@ -17,7 +17,7 @@ function Development() {
       <div className="downhint">
         <div className="hint-text">
           Alright. If you are here , you can see <span>React logo</span>. It's a language I
-          built most of my applications on.
+          built most of my applications on. Also I build my projects using languages like: HTML, CSS, JavaScript, Three.js, TypeScript and etc.
         </div>
       </div>
     </>

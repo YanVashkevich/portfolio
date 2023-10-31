@@ -13,7 +13,7 @@ export const Contact = () => {
     e.preventDefault()
     setIsLoading(false)
 
-    emailjs.sendForm('yanVash', 'template_7qgm37c', ref.current, 'GEMXQ6OS3QXHJhDNU')
+    emailjs.sendForm('service_54pitmn', 'template_0btx2fb', ref.current, 'YPT4-s2o7rYs4mFpM')
     .then((result) => {
         console.log(result.text);
         setSuccess(true)
@@ -26,6 +26,7 @@ export const Contact = () => {
 
 
   return (
+    
     <div className="contact">
       <form ref={ref} className="form-contact" onSubmit={handleSubmit}>
         <h1 className="title-contact-us">Contact Me</h1>
@@ -56,8 +57,10 @@ export const Contact = () => {
         {success && <div className='text-message-sent'>Your Message Has Been Sent. Thank You!</div>}
 
         <div className='social-imgs'>
-          <a target="_blank" href='https://www.instagram.com/bruhmonkeyproduction/'><img className='instagram' src='./Imgs/instagram.png'/></a>
+          <a target="_blank" href='https://www.instagram.com/yan.vashkevich/'><img className='instagram' src='./Imgs/instagram.png'/></a>
           <a target="_blank" href='https://yanvashkevich.t.me/'><img className='telegram' src='./Imgs/telegram.png'/></a>
+          <a target="_blank" href='https://github.com/YanVashkevich'><img className='github' src='./Imgs/github.png'/></a>
+          <a target="_blank" href='https://www.linkedin.com/in/yan-vashkevich-560628292/'><img className='linkedin' src='./Imgs/linkedin.png'/></a>
         </div>
       </form>
     </div>

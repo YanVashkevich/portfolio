@@ -3,12 +3,12 @@ import './Navbar.css'
 
 export const Navbar = () => {
   return (
-  <div className='body'>
     <div className='navbar'>
-      <p className='portfolio'>
+
+      <h1 className='portfolio-header'>
         Portfolio
-      </p>
+      </h1>
+
     </div>
-  </div>
   )
 }

@@ -1,51 +1,51 @@
-import React, { useState } from "react";
-import "./Works.css";
-import WebDesign from "../assets/WebDesign";
-import Development from "../assets/Development"
-import Ilustrations from "../assets/Ilustrations";
-import WebPages from "../assets/WebPages";
-import SocialMedia from "../assets/SocialMedia";
+import React, { useEffect } from 'react'
+import './Works.css'
+import { useGetWebSites } from '../assets/Context/useGetWebsites';
 
 
+function Works() {
 
-export const Works = () => {
-  const [varient, setVarient] = useState("web design");
+  const {isLoading, webSites, callAPI} = useGetWebSites()
+
+  useEffect(() => {
+   callAPI();
+  },[])
 
   return (
-    <div className="works">
-      <div className="left">
-        <ul className="works-left">
-          <div onClick={() => setVarient("web design")} className="wd">
-            Web Design
-          </div>
-          <div onClick={() => setVarient("development")} className="dev">
-            Development
-          </div>
-          <div onClick={() => setVarient("ilustrations")} className="ilu">
-            Ilustrations
-          </div>
-          <div onClick={() => setVarient("web-pages")} className="wp">
-            Web-pages
-          </div>
-          <div onClick={() => setVarient("social media")} className="sm">
-            Social media
-          </div>
-        </ul>
+    <div className='works'>
+        
+      <div className='works-body'>
+
+        <div>
+          <h1 className='header'>EXAMPLES OF MY WORKS:</h1>
+        </div>
+
+        <div className='websites'>
+              {isLoading ? (<div>loading</div>):(
+                <ul className='item-sites'>
+                  {webSites.map((website) => {
+                    return (
+                      <li key={website.id}>
+                        <h1 className='name-of-site'>
+                          {website.name}
+                        </h1>
+                        <a className='site-img' target='_blank' href={website.url}>
+                          <img src= {website.url === 'https://yan-tic-tac-toe.netlify.app/' ? "./Imgs/tictactoe.png":"./Imgs/trimminggardens.png"}/>
+                        </a>
+                        <div className='descr-site'>
+                          {website.description}
+                        </div>
+                      </li>
+                    )
+                  })}
+                </ul>
+            )}
+         </div>
+
       </div>
-      
-      <div className="works-right">
-        {varient === "web design" ? (
-          <WebDesign/>
-        ) : varient === "development" ? (
-          <Development />
-        ) : varient === "ilustrations" ? (
-          <Ilustrations />
-        ) : varient === "web-pages" ? (
-          <WebPages />
-        ) : (
-          <SocialMedia/>
-        )}
-      </div>
+
     </div>
-  );
-};
+  )
+}
+
+export default Works

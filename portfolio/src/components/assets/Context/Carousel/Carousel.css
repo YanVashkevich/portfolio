@@ -1,0 +1,91 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    height: 50%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .carousel .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel .carousel-item {
+    flex: 1;
+    min-width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+    border-radius: 36px;
+  }
+
+  .itm {
+    width: 400px;
+    height: 300px;
+    margin: 36px;
+    box-shadow: 1px 1px 18px  rgb(145, 194, 238);
+    border: none;
+    border-radius: 36px;
+  }
+  
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .carousel .prev {
+    margin: 0;
+    left: 10px;
+    color: white;
+  }
+
+  .carousel .next {
+    margin: 0;
+    right: 10px;
+    color: white;
+  }
+
+
+@media screen and (max-width:767px) {
+    .carousel{
+      width: 100%;
+      height: 60%;
+    }
+
+    .carousel-inner {
+      margin: 16px;
+    }
+
+    .itm {
+      width: 240px;
+      margin: 16px;
+      font-size:14px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .carousel{
+    width: 100%;
+    height: 60%;
+  }
+
+  .carousel-inner {
+    margin: 16px;
+  }
+
+  .itm {
+    width: 240px;
+    margin: 16px;
+    font-size:14px;
+  }
+}

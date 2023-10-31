@@ -10,7 +10,7 @@ function WebDesign() {
     <>
       <Canvas>
         <Stage>
-          <Tablet />
+          <Tablet/>
         </Stage>
         <OrbitControls enableZoom={false} autoRotate={false} />
       </Canvas>
@@ -19,7 +19,7 @@ function WebDesign() {
           <div className="hint-text">
             Hello! If you want to see more 3D objects, try to click on the next
             words and you'll see the magic! HIghly recommend to click on the
-            <span> Development</span>
+            <span> Development</span> and dont forget to click on the other words!
           </div>
         </div>
     </>

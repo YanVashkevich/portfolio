@@ -14,9 +14,10 @@ export const Who = () => {
 
   return (
     <div className="who">
-      <div className="main-content">
-        <div className="left">
-          <Canvas camera={{ fov: 25, position: [3, 3, 3] }}>
+      <div className="who-main-content">
+
+        <div className="who-left">
+          <Canvas className="cube" camera={{ fov: 25, position: [3, 3, 3] }}>
             <OrbitControls enableZoom={false} autoRotate={false} />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
@@ -24,13 +25,9 @@ export const Who = () => {
           </Canvas>
         </div>
 
-        <div className="right">
-          <h2 className="title">Think outside of the box.</h2>
-          <div className="what-we-do">-Who Am I</div>
-          <div className="text">
-            I'm a teenager, who is intersted in becoming <br/> frontend developer.
-          </div>
-          <button onClick={toggleModal} className="learn-btn">
+        <div className="who-right">
+          <h1>I'm Front-end/Full-stack Developer and I'm ready to build unique website just FOR YOU!</h1> 
+          <button onClick={toggleModal} className="send-btn">
             Learn more
           </button>
 
@@ -39,14 +36,18 @@ export const Who = () => {
               <div onClick={toggleModal} className="overlay"></div>
               <div className="modal-content">
                 <div className="text-modal">
-                  Hello , I'm Yan , young web developer from a Belarus.
-                  I'm building applications, exploring new things, learning and working on myself , sharpening my skills in coding.
-                  Trying to show that you don't need nothing besides computer and WI-FI to start coding.  
+                  I'm building websites using modern technologies and trending designs. 
+                   Thanks to the <a href="https://iamit.net/home">IamIT</a> "Web Development Program" and multiple hours of studying and exploring ethernet I'm confident in my coding skills,
+                    so, I'm ready to build a unique website just for you.
+                     If you're interesting what programming languages do I use here is my stack: <a>HTML | CSS | React | Javascript | Three.js | jQuery | PHP | TypeScript | Node.js | Git | JSON | Axios</a>.
+                      Also the language barrier won't be a problem for us,
+                        my native languages are Belarusian and Russian and also I have an Upper Intermediate level in both English and Polish.
                 </div>
               </div>
             </div>
           )}
         </div>
+
       </div>
     </div>
   );

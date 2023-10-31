@@ -1,108 +1,78 @@
 .hero {
-  height: 100vh;
+  height: 100vh !important;
   scroll-snap-align: center;
-  align-items: center;
-  justify-content: space-between;
-  width: 1400px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-.main-content {
-  align-items: center;
-  justify-content: space-between;
-  width: 1400px;
-  display: flex;
-  margin-left: 500px;
-}
 
-.left {
-  padding: 0;
-  margin: 64px;
-  text-align: left;
+.hero-left {
   flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-}
-
-.title {
-  margin-top: 100px;
-  font-size: 44px;
-  justify-content: left;
-}
-
-.what-we-do {
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  color: rgb(109, 64, 177);
-}
-
-.text {
-  font-size: 24px;
-  text-align: left;
-  color: lightgray;
-}
-
-.learn-btn:hover {
-  background-color: rgb(94, 161, 220);
-}
-
-.left a {
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
+  max-width: 1080px;
+  text-align: justify;
+  margin-bottom: -200px;
 }
 
 
-.learn-btn {
-  width: 100px;
-  font-weight: 500;
-  justify-content: center;
-  text-align: center;
-  float: right;
-  color: white;
-  background-color: rgb(145, 194, 238);
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-  height: 25px;
-  animation-name: gradient;
-  animation-duration: 4s;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.learn-btn:active {
-  transform: scale(0.96);
-}
-
-.right {
-  flex: 1;
-  height: 72vh;
+.hero-right {
+  width: 700px;
+  flex: 2;
   position: relative;
 }
 
-.cube-image {
-  width: 700px;
-  height: 260px;
+
+.photo {
+  user-select: none;
+  width: 400px;
+  height: 400px;
   object-fit: contain ;
-  mix-blend-mode: multiply;
-  filter: contrast(2);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  animation: animate 2s infinite ease alternate;
+  bottom: 110px;
+  left: 166px;
+  animation: animate 3s infinite ease alternate;  
 }
+
 
 @keyframes animate {
   100% {
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
 }
 
+
+@media screen and (max-width:767px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin: 24px;
+    font-size: 10px;
+    width: 85%;
+    height: 100px;
+  }
+
+  .hero-right {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin: 24px;
+    font-size: 10px;
+    width: 80%;
+    height: 100px;
+  }
+
+  .hero-right {
+    display: none;
+  }
+}

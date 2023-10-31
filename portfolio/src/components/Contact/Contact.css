@@ -1,9 +1,9 @@
 .contact {
-  height: 110vh;
+  height: 110vh !important;
   scroll-snap-align: center;
   width: 100%;
-  height: 100%;
 }
+
 
 .form-contact {
   display: flex;
@@ -16,70 +16,70 @@
   height: 95%;
 }
 
+
 .title-contact-us{
   margin-top: 0;
-  font-weight: 200;
 }
+
 
 .input-contact-email {
-  padding: 50px;
+  outline: none;
+  padding: 30px;
   background-color: rgb(255, 251, 251);
   border: none;
   border-radius: 36px;
-  width: 1000px;
+  width: 700px;
 }
+
 
 .input-contact-name {
-  padding: 50px;
+  outline: none;
+  padding: 30px;
   background-color: rgb(255, 251, 251);
   border: none;
   border-radius: 36px;
-  width: 1000px;
+  width: 700px;
 }
+
 
 .textarea {
-  padding: 50px;
-  background-color: rgb(255, 251, 251);
+  outline: none;
+  resize: none;
+  padding: 30px;
   border: none;
   border-radius: 36px;
-  width: 1000px;
+  width: 700px;
 }
 
+
 .send-btn {
+  margin: 0px;
   justify-content: center;
   text-align: center;
+  font-size: 16px;
   float: right;
   color: white;
   background-color: rgb(145, 194, 238);
   border-radius: 36px;
   cursor: pointer;
   border: none;
-  padding: 35px;
+  padding: 18px;
   cursor: pointer;
-  width: 500px;
+  width: 480px;
   transition: transform 0.2s ease;
+  transition: 0.5s;
 }
+
 
 .send-btn:hover {
   background-color: rgb(94, 161, 220);
 }
 
+
 .send-btn:active {
   transform: scale(0.96);
 }
 
-
-.instagram {
-  mix-blend-mode: multiply;
-  height: 32px;
-  width: 32px;
-}
-
-.telegram {
-  mix-blend-mode: multiply;
-  height: 32px;
-  width: 32px;
-}
 
 .social-imgs {
   margin: 0;
@@ -90,4 +90,97 @@
   gap: 26px;
 }
 
+
+.social-imgs img {
+  height: 38px;
+  width: 38px;
+}
+
+@media screen and (max-width:767px) {
+  .contact {
+    width: 100%;
+  }
+
+  .input-contact-email{
+    width: 200px;
+    height: 2px;
+    padding: 24px;
+    margin-bottom: -10px;
+  }
+
+  .input-contact-name{
+    width: 200px;
+    height: 2px;
+    padding: 24px;
+    margin-bottom: -10px;
+  }
+
+  .textarea {
+    padding: 24px;
+    width: 200px;
+    height: 30px;
+  }
+
+  .send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+  }
+
+  .title-contact-us {
+    margin:16px;
+    margin-top: 0;
+  }
+
+  .social-imgs img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .contact {
+    width: 100%;
+  }
+
+  .input-contact-email{
+    width: 200px;
+    height: 2px;
+    padding: 24px;
+    margin-bottom: -10px;
+  }
+
+  .input-contact-name{
+    width: 200px;
+    height: 2px;
+    padding: 24px;
+    margin-bottom: -10px;
+  }
+
+  .textarea {
+    padding: 24px;
+    width: 200px;
+    height: 30px;
+  }
+
+  .send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+  }
+
+  .title-contact-us {
+    margin:16px;
+    margin-top: 0;
+  }
+
+  .social-imgs img {
+    width: 28px;
+    height: 28px;
+  }
+}
 

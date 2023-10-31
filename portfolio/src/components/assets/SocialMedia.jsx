@@ -14,8 +14,7 @@ function SocialMedia() {
       </Canvas>
       <div className="downhint">
         <div className="hint-text">
-          In the end, I would like to ask you to write me <span>what did you
-          think about my website</span> , you can contact me in the section down below
+          So, If you have something to say about my porfolio or you want to <span>work with me</span> and create your dream website, you can contact me in the section down below
           by filling form or just DM me in social medias.
         </div>
       </div>

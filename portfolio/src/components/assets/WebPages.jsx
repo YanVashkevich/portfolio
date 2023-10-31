@@ -16,7 +16,9 @@ function WebPages() {
       </Canvas>
       <div className="hint">
         <div className="hint-text">
-          I build not only SPA , but MPA , if you want me to build you a website, I will build you anything , according to <span>your taste</span>!
+            If you have your own design I'll make up your design according to the layout,
+             if It's not the case , I'll always <span>come up with an ideas</span> for you ,
+              We'll discuss starting from what colors do you want me to use and ending with things like buttons, animations and etc.
         </div>
       </div>
     </>

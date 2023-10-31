@@ -1,16 +1,13 @@
-.body {
+.navbar {
+    height: 10vh !important;
     display: flex;
-    height: 10vh;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    color: aliceblue;
-    margin-left: 500px;
 }
 
 
-.portfolio {
-    font-size: 36px;
+.portfolio-header {
+    font-size: 42px;
     letter-spacing: 2px;
     border-right:5px solid aliceblue ;
     width: 100%;
@@ -27,4 +24,17 @@
 
 @keyframes typing {
     from {width: 0}
+}
+
+
+@media screen and (max-width:767px) {
+    .navbar {
+        margin-top: 20px;
+    }
+}
+  
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .navbar {
+        margin-top: 20px;
+    }
 }
